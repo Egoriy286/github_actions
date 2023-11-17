@@ -35,6 +35,7 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: |
+            Egoriy286/github_actions/backend
             Egoriy286/github_actions/frontend
             ghcr.io/${{ github.repository }}
       
