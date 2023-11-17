@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  frontend:
+    image: api_react_v3
+    restart: always
+    ports:
+      - 3000:3000
+  backend:
+    image: api_integral_v4
+    restart: always
+    ports:
+      - 5000:5000
+volumes:
+  frontend:
+  backend:
