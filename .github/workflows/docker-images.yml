@@ -35,8 +35,7 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: |
-            Egoriy286/github_actions/backend
-            Egoriy286/github_actions/frontend
+            Egoriy286/github_actions
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
