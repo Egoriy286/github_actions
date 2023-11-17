@@ -13,5 +13,6 @@ services:
       context: backend
       dockerfile: ../backend.Dockerfile
 
-  custom:
-    build: ~/custom
+volumes:
+  frontend:
+  backend:
