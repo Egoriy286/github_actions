@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Админ панель</title>
+  </head>
+  <body>
+    <form action="/admin" method="post">
+      <label for="server">Выберите сервер:</label>
+      <select name="server" id="server">
+        {% for server in servers %}
+          <option value="{{ server }}">{{ server }}</option>
+        {% endfor %}
+      </select>
+      <br><br>
+      <input type="submit" value="Отправить">
+    </form>
+  </body>
+</html>

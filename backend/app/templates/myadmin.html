@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комбобокс в Flask</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="options">Выберите вариант:</label>
+        <select id="options" name="options">
+            {% for option in options %}
+                <option value="{{ option }}" {% if selected_option == option %}selected{% endif %}>{{ option }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Сохранить</button>
+    </form>
+</body>
+</html>
