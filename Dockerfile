@@ -1,3 +1,5 @@
+version: "3.1"
+
 services:
   frontend:
     image: github_actions/frontend
